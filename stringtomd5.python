@@ -1,0 +1,10 @@
+import hashlib
+def main():
+    text="peacock"
+    text_enc=text.encode("utf-8")
+    
+    hash=hashlib.md5(text_enc)
+    result=hash.hexdigest()
+    print(result)
+    return
+main()
